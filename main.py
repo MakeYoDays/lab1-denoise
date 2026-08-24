@@ -136,16 +136,16 @@ def index():
             else:
                 error_message = "⚠️ Пожалуйста, выберите изображение!"
     
-return render_template(
-    'index.html',
-    form=form,
-    original=original_img,
-    processed=processed_img,
-    hist_comparison=hist_comparison,
-    noise_plot=noise_plot,
-    error=error_message,
-    captcha_question=captcha_q
-)
+    return render_template(
+        'index.html',
+        form=form,
+        original=original_img,
+        processed=processed_img,
+        hist_comparison=hist_comparison,
+        noise_plot=noise_plot,
+        error=error_message,
+        captcha_question=captcha_q
+    )
 
 # ==========================================
 # Запуск
