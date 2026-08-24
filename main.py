@@ -136,21 +136,20 @@ def index():
             else:
                 error_message = "⚠️ Пожалуйста, выберите изображение!"
     
-    return render_template(
-        'index.html',
-        form=form,
-        original=original_img,
-        processed=processed_img,
-        hist_comparison=hist_comparison,
-        noise_plot=noise_plot,
-        error=error_message,
-        captcha_question=captcha_q,
-        captcha_answer=captcha_a  # передаём для JS-валидации (опционально)
-    )
+return render_template(
+    'index.html',
+    form=form,
+    original=original_img,
+    processed=processed_img,
+    hist_comparison=hist_comparison,
+    noise_plot=noise_plot,
+    error=error_message,
+    captcha_question=captcha_q
+)
 
 # ==========================================
 # Запуск
 # ==========================================
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)  # debug=False для деплоя
+    app.run(host='0.0.0.0', port=port, debug=False)
