@@ -1,0 +1,101 @@
+/* ============================================
+   Глобальные стили (тёмная тема)
+   ============================================ */
+body {
+    background: #0a0e17;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Градиентные заголовки */
+.text-gradient {
+    background: linear-gradient(135deg, #00d2ff 0%, #7a2be0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Карточки с тенью */
+.card {
+    background: #141b2b !important;
+    border: 1px solid #1e2d45 !important;
+    border-radius: 16px !important;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 210, 255, 0.08);
+}
+
+/* Градиенты для заголовков карточек */
+.bg-gradient-purple {
+    background: linear-gradient(135deg, #6c3ce0, #a855f7) !important;
+}
+
+.bg-gradient-info {
+    background: linear-gradient(135deg, #0891b2, #06b6d4) !important;
+}
+
+.bg-gradient-warning {
+    background: linear-gradient(135deg, #d97706, #f59e0b) !important;
+}
+
+/* Кнопка с градиентом */
+.btn-gradient {
+    background: linear-gradient(135deg, #00d2ff 0%, #7a2be0 100%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
+    color: white;
+}
+
+/* Поля ввода */
+.form-control, .form-select {
+    background: #0d1524 !important;
+    border: 1px solid #1e2d45 !important;
+    color: #e0e0e0 !important;
+    border-radius: 10px !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #7a2be0 !important;
+    box-shadow: 0 0 0 0.25rem rgba(122, 43, 224, 0.2) !important;
+}
+
+/* Слайдер */
+.form-range::-webkit-slider-thumb {
+    background: linear-gradient(135deg, #00d2ff, #7a2be0);
+    border: none;
+}
+
+/* Инфо-карточки */
+.info-card {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid #1e2d45;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border-color: #7a2be0;
+}
+
+/* Кастомный скролл */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0a0e17;
+}
+::-webkit-scrollbar-thumb {
+    background: #7a2be0;
+    border-radius: 10px;
+}
