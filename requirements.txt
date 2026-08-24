@@ -1,8 +1,8 @@
-flask==2.3.3
-flask-wtf==1.2.1
-wtforms==3.0.1
-opencv-python==4.8.1.78
-Pillow==10.3.0
-matplotlib==3.7.3
-numpy==1.24.3
-gunicorn==21.2.0
+flask
+flask-wtf
+wtforms
+opencv-python-headless
+Pillow
+matplotlib
+numpy
+gunicorn
